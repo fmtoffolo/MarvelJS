@@ -6,6 +6,9 @@ var marvelApi = (function(){
 
 		$.getJSON(fullURL, function(data){
 			console.log(data);
+			var data = data.results[0];
+			console.log(data.name);
+			console.log(data.description);
 		})
 
 
