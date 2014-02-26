@@ -10,7 +10,7 @@
 
 	<header class="container">
 		<div class="row">
-			<div class="col-md-12" id="head">
+			<div class="col-md-12 text-center" id="head">
 				<h1>Marvel Random Character</h1>				
 			</div>
 		</div>
@@ -34,14 +34,14 @@
 	
 
 	<script id="main" type="text/x-handlebars-template">
-		<h2>{{name}}</h2>
-		<img src = "{{imgURL}}" />
+		<h2 class = "text-center">{{name}}</h2>
+		<img class = "img-responsive charPic" src = "{{imgURL}}" />
 		<p>{{description}}</p>
 	</script>
 	<script id="comics" type="text/x-handlebars-template">
 		{{#each this}}
-		<div class="col-md-6">
-			<h2>{{title}}</h2>
+		<div class="col-md-4">
+			<h2 class = "text-center">{{title}}</h2>
 			<img class="comicsPic img-responsive" src = "{{coverURL}}"/>
 			<p>{{description}}</p>
 		</div>
