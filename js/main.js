@@ -34,7 +34,7 @@ var marvelApi = (function($, Handlebars){
                 //if no character with pic and description is found in the sample of 50, make a new request.
                 if(fullChar == false){
                     return getCharacter();
-                });
+                })
 
                 
                 var comicsURL = 'http://gateway.marvel.com:80/v1/public/characters/' + finalData.id + '/comics?apikey=183da47a6957f77d1e530a4e3ba93528'
