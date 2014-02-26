@@ -12,7 +12,7 @@ var marvelApi = (function($, Handlebars){
             var finalData = {
                 name: data.name,
                 description: data.description,
-                imgURL: data.thumbnail.path + data.thumbnail.extension
+                imgURL: data.thumbnail.path +'.'+ data.thumbnail.extension
             }
             
             var templateScript = $('#main').html();
