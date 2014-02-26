@@ -10,7 +10,10 @@ var marvelApi = (function($, Handlebars){
             var data = data.data.results[0];
             console.log(data.name);
             console.log(data.description);
-            if(data.thumbnail.path === "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" || data.description == ""){
+            if(data.thumbnail.path === "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"){
+                getCharacter(); 
+            }
+            if(data.description === ""){
                 getCharacter(); 
             }
             var finalData = {
