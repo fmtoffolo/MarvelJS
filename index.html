@@ -41,9 +41,11 @@
 	<script id="comics" type="text/x-handlebars-template">
 		{{#each this}}
 		<div class="col-md-4">
-			<h2 class = "text-center">{{title}}</h2>
-			<img class="comicsPic img-responsive" src = "{{coverURL}}"/>
-			<p>{{description}}</p>
+			<section>
+				<h2 class = "text-center">{{title}}</h2>
+				<img class="comicsPic img-responsive" src = "{{coverURL}}"/>
+				<p>{{description}}</p>
+			</section>
 		</div>
 		{{/each}}
 	</script>
