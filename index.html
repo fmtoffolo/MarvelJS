@@ -12,6 +12,12 @@
 		<img src="{{imgURL}}" />
 		<p>{{description}}</p>
 	</script>
+	<script id="comics" type="text/x-handlebars-template">
+		{{#each this}}
+			<img src="{{coverURL}}"/>
+			<p>{{description}}</p>
+		{{/each}}
+	</script>
 
 
 
