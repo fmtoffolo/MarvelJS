@@ -22,10 +22,11 @@ body{
 .comicCard h3{
 	color: black;
 	font-size: 1.3em;
+	margin: 5px 0px 20px;
 }
 
 .comicsPic{
 	width: 320px;
-	height: auto;
+	height: 480px;
 }
 
