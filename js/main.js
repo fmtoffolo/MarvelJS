@@ -4,11 +4,15 @@ var marvelApi = (function($, Handlebars){
         randomChar = Math.floor(Math.random()*1401);
         fullURL = 'http://gateway.marvel.com:80/v1/public/characters?limit=1&offset=' + randomChar + '&apikey=' + pubKey;
 
-        $.getJSON(fullURL, function(data){
+    var getCharacter = function(){
+            $.getJSON(fullURL, function(data){
             console.log(data);
             var data = data.data.results[0];
             console.log(data.name);
             console.log(data.description);
+            if(data.thumbnail.path === "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"){
+                getCharacter();
+            }
             var finalData = {
                 name: data.name,
                 description: data.description,
@@ -20,7 +24,10 @@ var marvelApi = (function($, Handlebars){
 
             $(document.body).append(theTemplate(finalData));
             
-        })
+            })
+        }
+
+    getCharacter();
 
 
 
