@@ -31,16 +31,18 @@ var marvelApi = (function($, Handlebars){
                             description: comics[i].description,
                             coverURL: comics[i].thumbnail + '.' + comics[i].extension
                     };
+
+                    var templateScript = $('#main').html();
+                    var theTemplate = Handlebars.compile(templateScript);
+
+
+
+                    $(document.body).append(theTemplate(finalData));
                 })
+        
                 
-                var templateScript = $('#main').html();
-                var theTemplate = Handlebars.compile(templateScript);
-
-
-
-                $(document.body).append(theTemplate(finalData));
-                
-                })
+               
+            })
         }
 
     getCharacter();
