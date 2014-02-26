@@ -11,7 +11,7 @@ var marvelApi = (function($, Handlebars){
             console.log(data.name);
             console.log(data.description);
             if(data.thumbnail.path === "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"){
-                getCharacter(); 
+                return getCharacter(); 
             }
             var finalData = {
                 name: data.name,
