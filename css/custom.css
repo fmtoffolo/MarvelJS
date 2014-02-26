@@ -7,6 +7,10 @@
 }
 
 .comicCard{
-	height: 1000px;
+	height: 500px;
 	overflow: hidden;
+}
+
+.comicPic{
+	max-height: 300px;
 }
