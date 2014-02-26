@@ -25,7 +25,7 @@ var marvelApi = (function($, Handlebars){
                 var comicsURL = 'http://gateway.marvel.com:80/v1/public/characters/' + finalData.id + '/comics?apikey=183da47a6957f77d1e530a4e3ba93528'
                 $.getJSON(comicsURL, function(data){
                     var comics = data.data.results;
-                    var comicsData;
+                    var comicsData = [];
                     for (var i = 0; i < comics.length; i++) {
                         comicsData.push({title: comics[i].title,
                             description: comics[i].description,
