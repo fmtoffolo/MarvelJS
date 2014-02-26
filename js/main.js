@@ -42,7 +42,7 @@ var marvelApi = (function($, Handlebars){
 
 
                     $('#character').append(theTemplate(finalData));
-                    $('#comics').append(theTemplateComics(comicsData));
+                    $('#comicsDiv').append(theTemplateComics(comicsData));
 
                 })
         
