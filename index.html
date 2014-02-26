@@ -5,9 +5,18 @@
 	<title>Marvel random Character</title>
 </head>
 <body>
-	
+
+	<script id="main" type="text/x-handlebars-template">
+		<h1>Marvel characters</h1>
+		<h2>{{name}}</h2>
+		<img src="{{imgURL}}" />
+		<p>{{description}}</p>
+	</script>
+
+
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/vendor/handlebars-v1.3.0.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
