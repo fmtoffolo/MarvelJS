@@ -14,7 +14,7 @@ body{
 .comicCard{
 	background-color: white;
 	padding: 15px;
-	height: 600px;
+	height: 560px;
 	margin-bottom: 20px;
 }
 
@@ -22,7 +22,8 @@ body{
 .comicCard h3{
 	color: black;
 	font-size: 1.3em;
-	margin: 5px 0px 20px;
+	margin: 0px;
+	height: 50px;
 }
 
 .comicsPic{
