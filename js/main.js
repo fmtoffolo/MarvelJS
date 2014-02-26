@@ -15,12 +15,15 @@ var marvelApi = (function($, Handlebars){
                 
                 for (var i = 0; i < data.length; i++) {
                     if(data[i].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].description !== "" && fullChar == false){
-                        
+                       
+                        console.log(data[i].description);
+                        console.log(data[i].thumbnail.path +'.'+ data[i].thumbnail.extension);
+
                         finalData = {
                             name: data[i].name,
                             description: data[i].description,
                             imgURL: data[i].thumbnail.path +'.'+ data[i].thumbnail.extension,
-                            id: data.id
+                            id: data[i].id
                             }                         
                         fullChar = true;
                     }
