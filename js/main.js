@@ -27,9 +27,10 @@ var marvelApi = (function($, Handlebars){
                     var comics = data.data.results;
                     var comicsData = [];
                     for (var i = 0; i < comics.length; i++) {
-                        comicsData.push({title: comics[i].title,
+                        comicsData.push({
+                            title: comics[i].title,
                             description: comics[i].description,
-                            coverURL: comics[i].thumbnail + '.' + comics[i].extension
+                            coverURL: comics[i].thumbnail.path + '.' + comics[i].thumbnail.extension
                         });
                     };
 
