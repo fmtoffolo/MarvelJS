@@ -38,6 +38,12 @@ var marvelApi = (function($, Handlebars){
                 }
 
                 
+
+                var templateScript = $('#main').html();
+                var theTemplate = Handlebars.compile(templateScript);
+
+                $('#character').append(theTemplate(finalData));
+
                 comicsURL = 'http://gateway.marvel.com:80/v1/public/characters/' + finalData.id + '/comics?apikey=183da47a6957f77d1e530a4e3ba93528'
                 
                 $.getJSON(comicsURL, function(data){
@@ -51,14 +57,12 @@ var marvelApi = (function($, Handlebars){
                         });
                     };
 
-                    var templateScript = $('#main').html();
-                    var theTemplate = Handlebars.compile(templateScript);
+
 
                     var templateLoop = $("#comics").html();
                     var theTemplateComics = Handlebars.compile(templateLoop);
 
 
-                    $('#character').append(theTemplate(finalData));
                     $('#comicsDiv').append(theTemplateComics(comicsData));
 
                 })
