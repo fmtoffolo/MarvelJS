@@ -5,3 +5,8 @@
 	display: block;
 	margin: 0 auto;
 }
+
+.comicCard{
+	height: 100px;
+	overflow: hidden;
+}
