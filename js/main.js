@@ -14,12 +14,12 @@ var marvelApi = (function($, Handlebars){
                     finalData;
                 
                 for (var i = 0; i < data.length; i++) {
-                    if(data[i].data.thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].data.description !== "" && fullChar == false){
+                    if(data[i].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].description !== "" && fullChar == false){
                         
                         finalData = {
-                            name: data[i].data.name,
-                            description: data[i].data.description,
-                            imgURL: data[i].data.thumbnail.path +'.'+ data[i].data.thumbnail.extension,
+                            name: data[i].name,
+                            description: data[i].description,
+                            imgURL: data[i].thumbnail.path +'.'+ data[i].thumbnail.extension,
                             id: data.id
                             }                         
                         fullChar = true;
