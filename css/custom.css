@@ -13,14 +13,12 @@ body{
 
 .comicCard{
 	background-color: white;
-
-;
-
 }
 
 
 .comicCard h3{
-
+	color: black;
+	font-size: 1.3em;
 }
 
 .comicPic{
