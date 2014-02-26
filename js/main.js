@@ -13,8 +13,9 @@ var marvelApi = (function($, Handlebars){
                     fullChar = false,
                     finalData;
                 
+                //loop through response data for character with pic and description. when it finds one, change the fullchar to true and 
                 for (var i = 0; i < data.length; i++) {
-                    if(data[i].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].description !== "" && fullChar == false){
+                    if(data[i].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].description !== ""){
                        
                         console.log(data[i].description);
                         console.log(data[i].thumbnail.path +'.'+ data[i].thumbnail.extension);
@@ -26,11 +27,12 @@ var marvelApi = (function($, Handlebars){
                             id: data[i].id
                             }                         
                         fullChar = true;
+                        break;
                     }
                 };
                 
                 //if no character with pic and description is found in the sample of 50, make a new request.
-                if(fullChar == false{
+                if(fullChar == false){
                     return getCharacter();
                 });
 
