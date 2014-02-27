@@ -53,7 +53,8 @@ var marvelApi = (function($, Handlebars){
                         comicsData.push({
                             title: comics[i].title,
                             description: comics[i].description,
-                            coverURL: comics[i].thumbnail.path + '.' + comics[i].thumbnail.extension
+                            coverURL: comics[i].thumbnail.path + '.' + comics[i].thumbnail.extension,
+                            readURL: comics[i].urls[0].url
                         });
                     };
 
