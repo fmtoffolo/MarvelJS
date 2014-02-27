@@ -69,20 +69,6 @@ header h1{
 
 }
 
-.collectionTitle{
-    background-color: white;
-    padding: 15px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.collectionTitle h2{
-    color: black;
-    font-family: 'Marvel', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;    
-}
-
 .collection .comicCard{
     background-color: white;
     padding: 15px;
@@ -90,11 +76,16 @@ header h1{
     margin-bottom: 20px;
 }
 
+.collection .comicCard h2{
+    color: black;
+    font-family: 'Marvel', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
 
 .collection .comicCard h3{
     color: black;
     margin: 5px 0px 15px;
-    vertical-align: middle;
     font-family: 'Marvel', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
