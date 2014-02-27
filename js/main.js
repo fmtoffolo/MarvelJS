@@ -4,7 +4,7 @@ var marvelApi = (function($, Handlebars){
 
     var getCharacter = function(){
             var pubKey = '183da47a6957f77d1e530a4e3ba93528',
-                randomChar = Math.floor(Math.random()*1401);
+                randomChar = Math.floor(Math.random()*1401),
                 fullURL = 'http://gateway.marvel.com:80/v1/public/characters?limit=20&offset=' + randomChar + '&apikey=' + pubKey;
 
 
