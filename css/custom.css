@@ -4,7 +4,7 @@
 
 body{
 	color: white;
-	background-color: blue;
+	background-color: #001B2E;
 }
 
 
@@ -14,7 +14,9 @@ header{
 	background-color: #F0141E;
 	color: white;
 	font-weight: 700;
+	font-size: 5em;
 	font-style: italic;
+	font-family: 'Marvel', sans-serif;
 }
 
 
