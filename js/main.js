@@ -50,27 +50,23 @@ var marvelApi = (function($, Handlebars){
                 $.getJSON(comicsURL, function(data){
                     var comics = data.data.results;
                     var comicsData = [];
-                    for (var i = 0; i < comics.length; i++) {
-                        comicsData.push({
-                            title: comics[i].title,
-                            description: comics[i].description,
-                            coverURL: comics[i].thumbnail.path + '.' + comics[i].thumbnail.extension,
-                            readURL: comics[i].urls[0].url
-                        });
-                    };
+                    if(comics.length > 0){
+                        for (var i = 0; i < comics.length; i++) {
+                            comicsData.push({
+                                title: comics[i].title,
+                                description: comics[i].description,
+                                coverURL: comics[i].thumbnail.path + '.' + comics[i].thumbnail.extension,
+                                readURL: comics[i].urls[0].url
+                            });
+                        };
+                    
+                        var templateLoop = $("#comics").html();
+                        var theTemplateComics = Handlebars.compile(templateLoop);
 
-
-
-                    var templateLoop = $("#comics").html();
-                    var theTemplateComics = Handlebars.compile(templateLoop);
-
-                    $('.title').show();
-                    $('#comicsDiv').append(theTemplateComics(comicsData));
-
+                        $('.title').show();
+                        $('#comicsDiv').append(theTemplateComics(comicsData));
+                    }
                 })
-        
-                
-               
             })
         }
 
