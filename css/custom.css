@@ -49,6 +49,11 @@ header h1{
 
 .character p{
     margin: 20px 0px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Marvel', sans-serif;
 }
 
 
