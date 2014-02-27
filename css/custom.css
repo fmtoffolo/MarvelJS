@@ -41,12 +41,12 @@ header h1{
 .character .loader{
     color: white;
     font-family: 'Marvel', sans-serif;
-    
+
 }
 
 .character h2{
     font-family: 'Rock Salt', 'Comic Sans';
-    margin: 40px;
+    margin: 40px 10px;
 }
 
 .character .charPic{
