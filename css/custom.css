@@ -110,6 +110,7 @@ header h1{
 footer{
     background-color: black;
     padding: 10px;
+    display: none;
 }
 
 footer a{

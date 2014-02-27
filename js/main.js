@@ -64,9 +64,11 @@ var marvelApi = (function($, Handlebars){
                         var theTemplateComics = Handlebars.compile(templateLoop);
 
                         $('.data').show();
+                        $('footer').show();
                         $('#comicsDiv').append(theTemplateComics(comicsData));
                     }else{
                         $('.noData').show();
+                        $('footer').show();
                     }
                 })
             })
