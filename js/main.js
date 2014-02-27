@@ -5,7 +5,7 @@ var marvelApi = (function($, Handlebars){
     var getCharacter = function(){
             var pubKey = '183da47a6957f77d1e530a4e3ba93528',
                 randomChar = Math.floor(Math.random()*1401);
-                fullURL = 'http://gateway.marvel.com:80/v1/public/characters?limit=50&offset=' + randomChar + '&apikey=' + pubKey;
+                fullURL = 'http://gateway.marvel.com:80/v1/public/characters?limit=20&offset=' + randomChar + '&apikey=' + pubKey;
 
 
             $.getJSON(fullURL, function(data){
@@ -14,6 +14,7 @@ var marvelApi = (function($, Handlebars){
                     finalData,
                     comicsURL;
                 
+                console.log('Getting character list - limit: 20')
                 //loop through response data for character with pic and description. when it finds one, change the fullchar to true and 
                 for (var i = 0; i < data.length; i++) {
                     if(data[i].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && data[i].description !== ""){
