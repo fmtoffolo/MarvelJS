@@ -10,6 +10,7 @@ body{
 /*header*/
 header{
     width: 100%;
+    border-bottom: 3px white solid;
     background: rgb(240,23,20); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(240,23,20,1) 0%, rgba(160,19,14,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,23,20,1)), color-stop(100%,rgba(160,19,14,1))); /* Chrome,Safari4+ */
