@@ -18,8 +18,6 @@ font-family: 'Rock Salt', 'Comic Sans';
 .charPic{
 	display: block;
 	margin: 0 auto;
-	max-width: 400px;
-	height: auto;
 }
 
 .comicCard{
