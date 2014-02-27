@@ -14,30 +14,34 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 text-center" id="head">
-					<h1>Marvel Random Character</h1>				
+					<h1>Marvel's characters</h1>				
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="container title">
-		<div class="row">
-			<div id="character" class="col-xs-12">
+	<div class="character">
+		<div class="container">
+			<div class="row">
+				<div id="character" class="col-xs-12">
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div id="comicsDiv" class="col-xs-12">
-				
+	<div class="collection">
+		<div class="container">
+			<div class="row">
+				<div id="comicsDiv" class="col-xs-12">
+					
+				</div>
 			</div>
-		</div>
+		</div>		
 	</div>
 	
 
 	<script id="main" type="text/x-handlebars-template">
-		<h2 class = "text-center">{{name}}</h2>
+		<h2 class = "text-center name">{{name}}</h2>
 		<img class = "img-responsive charPic" src = "{{imgURL}}" />
 		<p>{{description}}</p>
 	</script>

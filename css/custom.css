@@ -3,54 +3,76 @@
 
 
 body{
-	color: white;
-	background-color: #001B2E;
+    color: white;
+    background-color: #001B2E;
 }
 
-
+/*header*/
 header{
+    width: 100%;
+    background-color: #F0141E;
+}
 
-	width: 100%;
-	background-color: #F0141E;
-	color: white;
-	font-weight: 700;
-	font-size: 5em;
-	font-style: italic;
-	font-family: 'Marvel', sans-serif;
+header h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Marvel', sans-serif;
+    margin: 20px 0px;
 }
 
 
-.title h2{
-font-family: 'Rock Salt', 'Comic Sans';
+/*character*/
+.character{
+    width: 100%;
+    background-color: #001B2E;
+}
 
+.character h2{
+    font-family: 'Rock Salt', 'Comic Sans';
+}
+
+.character .charPic{
+    display: block;
+    margin: 0 auto;
+}
+
+.character p{
+    margin: 20px 0px;
+}
+
+
+/*Collection*/
+.collection{
+    width: 100%;
+    background-color: black;
 }
 
 .comicsPic{
-}
 
-.charPic{
-	display: block;
-	margin: 0 auto;
-}
-
-.comicCard{
-	background-color: white;
-	padding: 15px;
-	height: auto;
-	margin-bottom: 20px;
 }
 
 
-.comicCard h3{
-	color: black;
-	font-size: 1em;
-	margin: 0px;
-	height: 50px;
-	vertical-align: middle;
+
+.collection .comicCard{
+    background-color: white;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.comicsPic{
-	width: 100%;
-	height: auto;
+
+.collection .comicCard h3{
+    color: black;
+    font-size: 1em;
+    margin: 0px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.collection .comicCard .comicsPic{
+    width: 100%;
+    height: auto;
 }
 
