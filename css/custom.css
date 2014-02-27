@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Rock+Salt);
-@import url(http://fonts.googleapis.com/css?family=Marvel:400,700);
+@import url(http://fonts.googleapis.com/css?family=Marvel:400,700,700italic);
 
 
 body{
@@ -9,11 +9,14 @@ body{
 
 
 header{
-	font-family: 'Marvel', sans-serif;
+
 	width: 100%;
 	background-color: #F0141E;
 	color: white;
+	font-weight: 700;
+	font-style: italic;
 }
+
 
 .title h2{
 font-family: 'Rock Salt', 'Comic Sans';
