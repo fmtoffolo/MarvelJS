@@ -39,7 +39,7 @@ font-family: 'Rock Salt', 'Comic Sans';
 }
 
 .comicsPic{
-	width: 320px;
-	height: 480px;
+	width: 100%;
+	height: auto;
 }
 
