@@ -63,6 +63,7 @@ header h1{
     width: 100%;
     background-color: black;
     padding: 20px 0px 0px;
+    display: none;
 }
 
 .comicsPic{
@@ -78,7 +79,6 @@ header h1{
 
 .collection .title{
     background-color: #f01714;
-    display: none;
 }
 
 .collection .comicCard h2{
