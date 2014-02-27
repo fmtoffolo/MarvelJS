@@ -39,7 +39,7 @@ var marvelApi = (function($, Handlebars){
                 }
 
                 
-                $('.loader').show();
+                $('.loader').hide();
                 var templateScript = $('#main').html();
                 var theTemplate = Handlebars.compile(templateScript);
 
