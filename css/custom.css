@@ -38,6 +38,12 @@ header h1{
     background-color: #001B2E;
 }
 
+.character .loader{
+    color: white;
+    font-family: 'Marvel', sans-serif;
+    
+}
+
 .character h2{
     font-family: 'Rock Salt', 'Comic Sans';
     margin: 40px;
