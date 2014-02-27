@@ -76,8 +76,12 @@ header h1{
     margin-bottom: 20px;
 }
 
+.collection .comicCard title{
+    background-color: #f01714;
+}
+
 .collection .comicCard h2{
-    color: black;
+    color: white;
     font-family: 'Marvel', sans-serif;
     font-size: 2em;
     font-weight: 700;
