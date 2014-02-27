@@ -23,10 +23,11 @@ header{
 header h1{
     color: white;
     font-weight: 700;
-    font-size: 5em;
+    font-size: 3em;
     font-style: italic;
     font-family: 'Marvel', sans-serif;
     margin: 20px 0px;
+    text-shadow: 0px 0px 5px #a0130e;
 }
 
 
@@ -38,6 +39,7 @@ header h1{
 
 .character h2{
     font-family: 'Rock Salt', 'Comic Sans';
+    margin: 40px;
 }
 
 .character .charPic{
@@ -54,6 +56,7 @@ header h1{
 .collection{
     width: 100%;
     background-color: black;
+    padding: 20px 0px 0px;
 }
 
 .comicsPic{
