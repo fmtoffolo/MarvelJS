@@ -63,8 +63,10 @@ var marvelApi = (function($, Handlebars){
                         var templateLoop = $("#comics").html();
                         var theTemplateComics = Handlebars.compile(templateLoop);
 
-                        $('.collection').show();
+                        $('.data').show();
                         $('#comicsDiv').append(theTemplateComics(comicsData));
+                    }else{
+                        $('.noData').show();
                     }
                 })
             })
