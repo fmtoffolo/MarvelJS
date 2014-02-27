@@ -107,3 +107,14 @@ header h1{
     height: auto;
 }
 
+footer{
+    background-color: black;
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Marvel', sans-serif;
+}
