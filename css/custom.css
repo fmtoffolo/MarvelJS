@@ -1,6 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+
+
 body{
 	color: white;
 	background-color: blue;
+}
+
+
+.title h2{
+font-family: 'Rock Salt', 'Comic Sans';
+
 }
 
 .comicsPic{
@@ -9,6 +18,8 @@ body{
 .charPic{
 	display: block;
 	margin: 0 auto;
+	max-width: 400px;
+	height: auto;
 }
 
 .comicCard{
