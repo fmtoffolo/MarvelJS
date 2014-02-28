@@ -63,11 +63,13 @@ var marvelApi = (function($, Handlebars){
                         var templateLoop = $("#comics").html();
                         var theTemplateComics = Handlebars.compile(templateLoop);
 
-                        $('.data').show();
+                        $('.dataMessage').text('Find this Character in these comics!');
+                        $('.collection').show();
                         $('footer').show();
                         $('#comicsDiv').append(theTemplateComics(comicsData));
                     }else{
-                        $('.noData').show();
+                        $('.dataMessage').text('No comics\'s data available for this character.');
+                        $('.collection').show();
                         $('footer').show();
                     }
                 })
